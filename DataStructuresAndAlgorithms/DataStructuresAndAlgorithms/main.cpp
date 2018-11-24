@@ -7,37 +7,13 @@
 //
 
 #include <iostream>
+#include "bubble_sort.hpp"
 
 
-/**
- 冒泡
 
- @param nums nums
- @param size size
- */
-void bubble_sort(int nums[] , int size) {
-    //    从左开始比较相邻的两个元素x和y，如果 x > y 就交换两者
-    //    执行比较和交换，直到到达数组的最后一个元素
-    //    重复执行1和2，直到执行n次，也就是n个最大元素都排到了最后
-    
-    
-    //    由于我们要重复执行n次冒泡，每次冒泡要执行n次比较（实际是1到n的等差数列，也就是(a1 + an) * n / 2），也就是 O(n^2)。 空间复杂度是O(n)。
-    
-    for (int i = 0; i<size-1; i++) {
-        for (int j = 0; j<size-i-1; j++) {
-            if (nums[j]>nums[j+1]) {
-                int tmp = nums[j];
-                nums[j] = nums[j+1];
-                nums[j+1] = tmp;
-                
-            //                不需要tmp的方法
-            //                nums[j] += nums[j + 1];
-            //                nums[j + 1] = num[j] - nums[j + 1];
-            //                nums[j] -= num[j + 1];
-            }
-        }
-    }
-}
+
+
+
 
 /**
  插入排序
@@ -48,7 +24,7 @@ void bubble_sort(int nums[] , int size) {
 void insert_sort(int nums[] , int size) {
     
     //  使前面部分有序 ， 并且从后面遍历出的数值中插入前面有序部分
-    //  插入次数 * 选择次数 复杂度为 O(n^2)
+    //  插入次数 * 选择次数 时间复杂度为 O(n^2)
     
     for (int i = 1; i < size; i++) {
         for (int j = i; j>0; j--) {
@@ -68,6 +44,10 @@ void insert_sort(int nums[] , int size) {
  @param size size
  */
 void selection_sort(int nums[] , int size) {
+    
+    
+    //  每次都从头乱序数组中b将最大值放在头部
+    //  时间复杂度O(n^2)
     
     for (int i = 0; i < size; i++) {
         int min = i;
@@ -91,6 +71,8 @@ void selection_sort(int nums[] , int size) {
  @param size size
  */
 void shell_sort(int nums[] , int size) {
+    
+    // 不断将步长设置为数组大小的一半 ，组内采用c插入排序 ， 重复直到步长为1
     
     for (int gap = size >> 1; gap > 0; gap >>= 1) {
         for (int i = gap; i < size; i++) {
@@ -168,6 +150,8 @@ int main(int argc, const char * argv[]) {
     for (int i = 0; i<size; i++) {
         cout << unSortArray[i] << ",";
     }
+    
+    cout << endl;
     
     return 0;
 }
