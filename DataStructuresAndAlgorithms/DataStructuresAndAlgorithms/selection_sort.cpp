@@ -1,3 +1,12 @@
+//
+//  selection_sort.cpp
+//  DataStructuresAndAlgorithms
+//
+//  Created by Felix on 2018/11/26.
+//  Copyright © 2018 Felix. All rights reserved.
+//
+
+#include "selection_sort.hpp"
 
 /**
  选择排序
@@ -24,5 +33,3 @@ void selection_sort(int nums[] , int size) {
         nums[min] = tmp;
     }
 }
-
-

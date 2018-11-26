@@ -1,3 +1,13 @@
+//
+//  insert_sort.cpp
+//  DataStructuresAndAlgorithms
+//
+//  Created by Felix on 2018/11/26.
+//  Copyright © 2018 Felix. All rights reserved.
+//
+
+#include "insert_sort.hpp"
+
 /**
  插入排序
  
@@ -19,5 +29,3 @@ void insert_sort(int nums[] , int size) {
         }
     }
 }
-
-
