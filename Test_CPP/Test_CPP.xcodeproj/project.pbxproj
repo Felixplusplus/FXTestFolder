@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC2941EC2223E765002FBC88 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2941EB2223E765002FBC88 /* Person.m */; };
-		DCDB09A52223E52700BFEA55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDB09A42223E52700BFEA55 /* main.m */; };
+		DC26DB562238D0F40075B78F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC26DB552238D0F40075B78F /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		DCDB099F2223E52700BFEA55 /* CopyFiles */ = {
+		DC26DB502238D0F40075B78F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,14 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DC2941EA2223E765002FBC88 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		DC2941EB2223E765002FBC88 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		DCDB09A12223E52700BFEA55 /* KVC_Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KVC_Test; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCDB09A42223E52700BFEA55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC26DB522238D0F40075B78F /* Test_CPP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test_CPP; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC26DB552238D0F40075B78F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DCDB099E2223E52700BFEA55 /* Frameworks */ = {
+		DC26DB4F2238D0F40075B78F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,97 +38,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DCDB09982223E52700BFEA55 = {
+		DC26DB492238D0F40075B78F = {
 			isa = PBXGroup;
 			children = (
-				DCDB09A32223E52700BFEA55 /* KVC_Test */,
-				DCDB09A22223E52700BFEA55 /* Products */,
+				DC26DB542238D0F40075B78F /* Test_CPP */,
+				DC26DB532238D0F40075B78F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DCDB09A22223E52700BFEA55 /* Products */ = {
+		DC26DB532238D0F40075B78F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DCDB09A12223E52700BFEA55 /* KVC_Test */,
+				DC26DB522238D0F40075B78F /* Test_CPP */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DCDB09A32223E52700BFEA55 /* KVC_Test */ = {
+		DC26DB542238D0F40075B78F /* Test_CPP */ = {
 			isa = PBXGroup;
 			children = (
-				DCDB09A42223E52700BFEA55 /* main.m */,
-				DC2941EA2223E765002FBC88 /* Person.h */,
-				DC2941EB2223E765002FBC88 /* Person.m */,
+				DC26DB552238D0F40075B78F /* main.cpp */,
 			);
-			path = KVC_Test;
+			path = Test_CPP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DCDB09A02223E52700BFEA55 /* KVC_Test */ = {
+		DC26DB512238D0F40075B78F /* Test_CPP */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DCDB09A82223E52700BFEA55 /* Build configuration list for PBXNativeTarget "KVC_Test" */;
+			buildConfigurationList = DC26DB592238D0F40075B78F /* Build configuration list for PBXNativeTarget "Test_CPP" */;
 			buildPhases = (
-				DCDB099D2223E52700BFEA55 /* Sources */,
-				DCDB099E2223E52700BFEA55 /* Frameworks */,
-				DCDB099F2223E52700BFEA55 /* CopyFiles */,
+				DC26DB4E2238D0F40075B78F /* Sources */,
+				DC26DB4F2238D0F40075B78F /* Frameworks */,
+				DC26DB502238D0F40075B78F /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = KVC_Test;
-			productName = KVC_Test;
-			productReference = DCDB09A12223E52700BFEA55 /* KVC_Test */;
+			name = Test_CPP;
+			productName = Test_CPP;
+			productReference = DC26DB522238D0F40075B78F /* Test_CPP */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DCDB09992223E52700BFEA55 /* Project object */ = {
+		DC26DB4A2238D0F40075B78F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Felix;
 				TargetAttributes = {
-					DCDB09A02223E52700BFEA55 = {
+					DC26DB512238D0F40075B78F = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = DCDB099C2223E52700BFEA55 /* Build configuration list for PBXProject "KVC_Test" */;
+			buildConfigurationList = DC26DB4D2238D0F40075B78F /* Build configuration list for PBXProject "Test_CPP" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = DCDB09982223E52700BFEA55;
-			productRefGroup = DCDB09A22223E52700BFEA55 /* Products */;
+			mainGroup = DC26DB492238D0F40075B78F;
+			productRefGroup = DC26DB532238D0F40075B78F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DCDB09A02223E52700BFEA55 /* KVC_Test */,
+				DC26DB512238D0F40075B78F /* Test_CPP */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DCDB099D2223E52700BFEA55 /* Sources */ = {
+		DC26DB4E2238D0F40075B78F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC2941EC2223E765002FBC88 /* Person.m in Sources */,
-				DCDB09A52223E52700BFEA55 /* main.m in Sources */,
+				DC26DB562238D0F40075B78F /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		DCDB09A62223E52700BFEA55 /* Debug */ = {
+		DC26DB572238D0F40075B78F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -190,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		DCDB09A72223E52700BFEA55 /* Release */ = {
+		DC26DB582238D0F40075B78F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -242,17 +236,19 @@
 			};
 			name = Release;
 		};
-		DCDB09A92223E52700BFEA55 /* Debug */ = {
+		DC26DB5A2238D0F40075B78F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		DCDB09AA2223E52700BFEA55 /* Release */ = {
+		DC26DB5B2238D0F40075B78F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -261,25 +257,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DCDB099C2223E52700BFEA55 /* Build configuration list for PBXProject "KVC_Test" */ = {
+		DC26DB4D2238D0F40075B78F /* Build configuration list for PBXProject "Test_CPP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DCDB09A62223E52700BFEA55 /* Debug */,
-				DCDB09A72223E52700BFEA55 /* Release */,
+				DC26DB572238D0F40075B78F /* Debug */,
+				DC26DB582238D0F40075B78F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DCDB09A82223E52700BFEA55 /* Build configuration list for PBXNativeTarget "KVC_Test" */ = {
+		DC26DB592238D0F40075B78F /* Build configuration list for PBXNativeTarget "Test_CPP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DCDB09A92223E52700BFEA55 /* Debug */,
-				DCDB09AA2223E52700BFEA55 /* Release */,
+				DC26DB5A2238D0F40075B78F /* Debug */,
+				DC26DB5B2238D0F40075B78F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DCDB09992223E52700BFEA55 /* Project object */;
+	rootObject = DC26DB4A2238D0F40075B78F /* Project object */;
 }
